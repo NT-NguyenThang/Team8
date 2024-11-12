@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root{
    --main-color:#8e44ad;
@@ -170,6 +172,14 @@ section{
    animation:fadeIn .2s linear backwards .6s;
 }
 
+.home .swiper-button-next{
+   border-radius: 0 50% 50% 0;
+}
+
+.home .swiper-button-prev{
+   border-radius: 50% 0 0 50%;
+}
+
 .home .swiper-button-next,
 .home .swiper-button-prev{
    top:inherit;
@@ -208,6 +218,7 @@ section{
    text-align: center;
    background: var(--main-color);
    cursor: pointer;
+   border-radius: 38px;
 }
 
 .services .box-container .box:hover{
@@ -242,6 +253,7 @@ section{
    flex:1 1 41rem;
    padding:3rem;
    background: var(--light-bg);
+   border-radius: 0px 15px 15px 0px;
 }
 
 .home-about .content h3{
@@ -254,6 +266,7 @@ section{
    padding:1rem 0;
    line-height: 2;
    color:var(--black);
+   
 }
 
 .home-packages{
@@ -270,6 +283,8 @@ section{
    border:var(--border);
    box-shadow: var(--box-shadow);
    background: var(--white);
+   border-radius: 10px;
+   box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.25), -5px -5px 20px 1px rgba(0, 0, 0, 0.25);
 }
 
 .home-packages .box-container .box:hover .image img{
@@ -279,6 +294,7 @@ section{
 .home-packages .box-container .box .image{
    height: 25rem;
    overflow: hidden;
+   border-radius: 10px;
 }
 
 .home-packages .box-container .box .image img{
@@ -401,6 +417,7 @@ section{
    text-align: center;
    box-shadow: var(--box-shadow);
    user-select: none;
+   height: 300px;
 }
 
 .reviews .slide .stars{
@@ -435,6 +452,10 @@ section{
    width: 7rem;
    border-radius: 50%;
    margin-top: 1rem;
+}
+
+.reviews .load-more {
+   text-align: center;
 }
 
 .packages .box-container{
@@ -540,6 +561,370 @@ section{
    margin-top: 2rem;
 }
 
+.news-list-body {
+   display: flex;
+}
+
+.left-box {
+   margin-top: 50px;
+   display: flex;
+   width: 820px;
+   height: 200px;
+   border-radius: 15px;
+   background: #FFF;
+   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25), -5px -5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.left-box-img {
+   margin: 25px 20px 25px 25px;
+   width: 150px;
+   height: 150px;
+}
+
+.left-box-content {
+   position: relative;
+   margin: 25px 25px 25px 0;
+}
+
+.left-box-content-title {
+   color: #000;
+   font-family: 'Baloo 2';
+   font-size: 25px;
+   font-weight: 800;
+   margin-bottom: 0;
+   max-height: 70px;
+}
+
+.left-box-content-date {
+   color: #000;
+   font-family: 'Inter';
+   font-size: 12px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+}
+
+.left-box-content-desc {
+   position: absolute;
+   color: #000;
+   font-family: 'Inter';
+   font-size: 15px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   bottom: 25px;
+}
+
+.left-box-content-more {
+   position: absolute;
+   color: #8E44AD;
+   font-family: 'Inter';
+   font-size: 15px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
+   bottom: 0;
+}
+
+
+
+.news-list-body-right {
+   margin-left: 60px;
+   position: relative;
+}
+
+.line-vertical{
+   border-left: 2px solid #000; 
+   height: 100%; 
+   position: absolute; 
+   left: -30px; 
+   top: 0;
+}
+
+.news-list-body-right-heading1 {
+   font-size: 25px;
+   font-weight: 500;
+}
+
+.box-search {
+   position: relative;
+   width: 350px;
+   height: 50px;
+   border-radius: 15px;
+   border: 1px solid #000;
+   background: #FFF;
+}
+
+.box-icon {
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 15px;
+   border: 1px solid #000;
+   background: #8E44AD;
+   right: 0;
+}
+
+.news-list-body-right-heading2 {
+   margin-top: 80px;
+   color: #000;
+   font-size: 25px;
+   font-weight: 500;
+}
+
+.locations-province {
+   margin-top: 30px;
+}
+
+.locations-province .desc {
+   margin-top: 10px;
+   color: #000;
+   font-size: 20px;
+   font-weight: 400;
+}
+
+
+.news-list-body-left .title .heading-new {
+   color: #000;
+   font-family: 'Baloo 2';
+   font-size: 30px;
+   font-weight: 800;
+   height: 30px;
+}
+
+.news-list-body-left .title .date {
+   margin-top: 5px;
+   color: #000;
+   font-family: 'Inter';
+   font-size: 15px;
+   font-weight: 400;
+}
+
+.news-list-body-left .title .desc {
+   margin-top: 15px;
+   color: #000;
+   text-align: justify;
+   font-family: 'Inter';
+   font-size: 15px;
+   font-weight: 400;
+}
+
+.news-list-body-left .body .heading-body {
+   margin-top: 20px;
+   color: #000;
+   text-align: justify;
+   font-family: 'Inter';
+   font-size: 20px;
+   font-weight: 400;
+}
+
+.news-list-body-left .body .desc {
+   margin-top: 10px;
+   color: #000;
+   text-align: justify;
+   font-family: 'Inter';
+   font-size: 15px;
+   font-weight: 400;
+}
+
+.news-list-body-left .body .img-new {
+   margin-top: 10px;
+}
+
+.notification-heading {
+   text-align: center;
+   color: #000;
+   font-size: 50px;
+   font-weight: 600;
+}
+
+.notification-desc {
+   margin-top: 30px;
+   color: #000;
+   text-align: center;
+   font-size: 15px;
+   font-weight: 400;
+
+}
+
+.information-tour {
+   display: flex;
+   background-color: #eee;
+}
+
+.information-tour .img {
+   width: 615px;
+   height: 389.241px;
+}
+
+.information-tour-title {
+   margin-left: 137px;
+   text-align: center;
+}
+
+.information-tour-title .heading {
+   color: #000;
+   font-size: 50px;
+   font-weight: 600;
+   text-align: center;
+   padding-bottom: 0;
+   padding-top: 0;
+}
+
+.information-tour-title .review {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.information-tour-title .hotel {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.information-tour-title p {
+   color: #000;
+   font-size: 20px;
+   font-weight: 400;
+}
+
+.information-tour-title .button {
+   margin-top: 15px;
+}
+
+.information-tour-title .btn {
+   width: 170px;
+   color: #FFF;
+   font-size: 17px;
+   font-weight: 700;
+   padding: 10px;
+   border-radius: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.schedule-heading {
+   text-align: center;
+   font-family: "Inter";
+   font-size: 50px;
+   font-weight: 700;
+}
+
+.schedule-day {
+   font-size: 30px;
+   font-weight: 700;
+}
+
+.desc-time {
+   font-size: 20px;
+   font-weight: 400;
+}
+
+.schedule .desc {
+   margin-left: 50px;
+   font-size: 20px;
+   font-weight: 400;
+}
+
+.schedule-img {
+   text-align: center;
+}
+
+
+
+.review {
+   display: flex;
+}
+
+.review-list {
+   margin-top: 25px;
+   display: flex;
+   gap: 150px;
+}
+
+.box-review {
+   text-align: center;
+   width: 400px;
+   height: 300px;
+   border-radius: 15px;
+   background: #FFF;
+   box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25), -5px -5px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.review-list .fa-star {
+   padding-top: 20px;
+   color: #8E44AD;
+}
+
+.review-list p {
+   padding-top: 10px;
+   color: #777;
+   text-align: center;
+   font-size: 15px;
+   font-weight: 400;
+}
+
+.review-list h3 {
+   padding: 10px;
+   color: #000;
+   text-align: center;
+   font-size: 20px;
+   font-weight: 600;
+}
+
+.review-list span {
+   display: block;
+   color: #8E44AD;
+   text-align: center;
+   font-size: 15px;
+   font-weight: 400;
+}
+
+.review-list img {
+   height: 7rem;
+   width: 7rem;
+   border-radius: 50%;
+   margin-top: 1rem;
+}
+
+.review-left {
+   text-align: center;
+   width: 190px;
+}
+.review-left img{
+   width: 200px;
+   height: 200px;
+   border-radius: 999px;
+}
+
+.review-left p{
+   color: #000;
+   font-size: 25px;
+   font-weight: 600;
+}
+
+.review-left span {
+   color: #8E44AD;
+   font-size: 15px;
+   font-weight: 400;
+}
+
+.review-right {
+   margin-left: 50px;
+}
+
+.review-right h2 {
+   font-size: 35px;
+   font-weight: 700;
+}
+
+.review-right p {
+   font-size: 15px;
+   font-weight: 400;
+}
 
 
 
